@@ -1,0 +1,127 @@
+/* External CSS file for Navbar component */
+
+/* Reset default styles for ul and li */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    display: inline-block;
+  }
+  
+  /* Main Navbar styles */
+  .main-nav {
+    background-color: #212121;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  .logo {
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease; /* Add color transition */
+  }
+  
+  .logo:hover {
+    transform: scale(1.1);
+    color: #ff9800; /* Change to desired hover color */
+  }
+  
+  .logo h2 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Add color transition */
+  }
+  
+  .menu-link ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .menu-link ul li a:hover {
+    color: #ff9800;
+  }
+  
+  /* Hero section styles */
+  .hero-section {
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .hero-section p {
+    color: #212121;
+    font-size: 18px;
+  }
+  
+  .hero-section h1 {
+    color: #212121;
+    font-size: 48px;
+    margin-top: 20px;
+  }
+  
+  /* Animation for Navbar */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .main-nav,
+  .hero-section {
+    animation: fadeIn 1s ease;
+  }
+
+/* Search bar */
+/* Center alignment for the menu link container */
+.menu-link {
+  text-align: center;
+}
+
+/* Search bar */
+/* Center alignment for the menu link container */
+.menu-link {
+  text-align: center;
+}
+
+/* Search bar */
+#searchInput {
+  margin-right: 5px;
+}
+
+#searchButton {
+  background-color: #ff9800;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+#searchButton button:hover{
+  color: lightblue;
+}
+
+/* Food type options */
+.menu-link ul li span {
+  margin-left: 20px;
+}
+
+.menu-link ul li label {
+  margin-left: 10px;
+}
+
+.menu-link ul li input[type="radio"] {
+  margin-right: 5px;
+}
+
+
+  

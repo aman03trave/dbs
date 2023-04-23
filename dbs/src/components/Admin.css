@@ -1,0 +1,68 @@
+/* External CSS file for admin login page */
+
+/* Container for admin login box */
+.admin-login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #007bff, #00bfff);
+  }
+  
+  /* Admin login box */
+  .admin-login-box {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Admin login box title */
+  .admin-login-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+  
+  /* Admin login input fields */
+  .admin-login-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    outline: none;
+    transition: border-bottom-color 0.3s ease;
+  }
+  
+  /* Admin login input field hover */
+  .admin-login-box input:hover {
+    border-bottom-color: #007bff;
+  }
+  
+  /* Admin login button */
+  .admin-login-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Admin login button hover */
+  .admin-login-box button:hover {
+    background-color: #0056b3;
+  }
+  .main-nav {
+    background-color: #212121;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }

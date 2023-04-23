@@ -1,0 +1,54 @@
+/* External CSS file for login page styles */
+
+/* Styles for main navigation */
+
+  
+  /* Styles for login box */
+  .login-box {
+    background-color: #c97c45;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  
+  .login-box h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .login-section input[type='email'],
+  .login-section input[type='password'] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .login-section button[type='submit'] {
+    background-color: #0072ff;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .login-section button[type='submit']:hover {
+    background-color: #0056b3;
+  }
+  .main-nav {
+    background-color: #212121;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  

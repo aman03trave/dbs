@@ -1,0 +1,65 @@
+/* External CSS file for review page styles */
+
+/* Styles for main navigation */
+  
+  /* Styles for review box */
+  .review-box {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  
+  .review-box h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .rating-section {
+    margin-bottom: 20px;
+  }
+  
+  .rating-label {
+    font-weight: bold;
+    color: #fff;
+    margin-top: 10px;
+  }
+  
+  .rating-value {
+    color: #fff;
+    margin-left: 10px;
+  }
+  
+  input[type='range'] {
+    width: 100%;
+  }
+  
+  .review-section textarea {
+    width: 90%;
+    resize: none;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  button[type='submit'] {
+    background-color: #fff;
+    color: #0072ff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  button[type='submit']:hover {
+    background-color: #0072ff;
+    color: #fff;
+  }
+  

@@ -1,0 +1,57 @@
+.body {
+    background-color: rgb(138, 186, 186);
+    background-size: cover;
+  }
+.container {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 28px;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
+  .buttons-container {
+    margin-top: 30px;
+  }
+  
+  button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  #bookTableBtn {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  #giveReviewBtn {
+    background-color: #28a745;
+    color: #fff;
+  }
+  .main-nav2 {
+    background-color: #212121;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .menu-link2 ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .menu-link2 ul li a:hover {
+    color: #ff9800;
+  }
+  
