@@ -2,6 +2,7 @@
 
 // Import required modules
 import React, { useState } from 'react';
+import {Link} from 'react-router-dom';
 import './Admin.css';
 
 // Define functional component for admin login
@@ -60,9 +61,11 @@ const AdminLogin = () => {
         value={password}
         onChange={(e) => setPassword(e.target.value)}
       />
+      <Link className="Link" to = "/Adminaftermath">
       <button type="button" onClick={handleAdminLogin}>
         Login
       </button>
+      </Link>
     </div>
     </section>
    

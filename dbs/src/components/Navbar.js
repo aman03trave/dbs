@@ -1,37 +1,20 @@
-import React from 'react';
+import React , { useState } from 'react';
 import "./Navbar.css";
 
 
 const Navbar = () => {
+  const [mapUrl, setMapUrl] = useState(null);
+
   // Function to handle location search
   const handleLocationSearch = () => {
-    // Retrieve current user location using the Geolocation API
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(
-        position => {
-          const { latitude, longitude } = position.coords;
-          // Call location search API with retrieved latitude and longitude
-          fetch(`https://api.example.com/location/search?lat=${latitude}&lng=${longitude}`) // Replace with your actual API endpoint and query parameters
-            .then(response => response.json())
-            .then(data => {
-              // Handle the location search API response here
-              console.log(data);
-            })
-            .catch(error => {
-              // Handle any errors from the location search API here
-              console.error(error);
-            });
-        },
-        error => {
-          // Handle any errors from the Geolocation API here
-          console.error(error);
-        }
-      );
-    } else {
-      // Geolocation is not supported by the browser, handle accordingly
-      console.error('Geolocation is not supported by this browser.');
-    }
+    navigator.geolocation.getCurrentPosition(position => {
+      const { latitude, longitude } = position.coords;
+      // Update map URL
+      const newMapUrl = `https://maps.google.com/maps?q=${latitude},${longitude}&z=15&output=embed`;
+      setMapUrl(newMapUrl);
+    });
   };
+  
 
   return (
     <>
@@ -49,10 +32,7 @@ const Navbar = () => {
               <a href='/'>Home</a>
             </li>
             <li>
-              <a href="/Admin">Admin</a>
-            </li>
-            <li>
-              <a href="#about">About Us</a>
+              <a href="#aboutus">About Us</a>
             </li>
             <li>
               <a href="/login">Login</a>
@@ -82,16 +62,17 @@ const Navbar = () => {
       <input type="text" id="searchInput" placeholder="Search"/>
       <button id="searchButton">Search</button>
     </li>
-    <li>
-      <span>Food Type:</span>
-      <label for="vegOption">
-        <input type="radio" id="vegOption" name="foodType" value="veg"/>Veg
-      </label>
-      <label for="nonVegOption">
-        <input type="radio" id="nonVegOption" name="foodType" value="non-veg"/>Non-Veg
-      </label>
-    </li>
+    
   </ul>
+  {/* Render map iframe */}
+  {mapUrl && (
+        <section>
+          <div id="mapContainer">
+            <iframe src={mapUrl} width="700" height="300" title="Map"></iframe>
+          </div>
+        </section>
+      )}
+
 </div>
 
       </section>
@@ -101,3 +82,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+

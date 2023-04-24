@@ -1,0 +1,38 @@
+.signup-box {
+    background: linear-gradient(to right, #a4b6bb, #6e88a8);
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: auto;
+  }
+  
+  .review-box h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  button[type='submit'] {
+    background-color: #fff;
+    color: #0072ff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  button[type='submit']:hover {
+    background-color: #0072ff;
+    color: #fff;
+  }
+  .review-section textarea {
+    width: 90%;
+    resize: none;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }

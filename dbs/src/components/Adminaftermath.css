@@ -1,0 +1,63 @@
+/* External CSS file for Adminaftermath component */
+
+.container {
+    background: linear-gradient(to right, #a4b6bb, #6e88a8);
+    /* display: flex; */
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    margin-top: 50px;
+
+  }
+  
+  h3 {
+    margin-top: 20px;
+    font-size: 25px;
+  }
+  
+  .Link {
+    text-decoration: none;
+  }
+  
+  button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+ 
+  .logo a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .menu-link ul {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-link li {
+    list-style-type: none;
+    margin-right: 20px;
+  }
+  
+  .menu-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .menu-link a:hover {
+    text-decoration: underline;
+  }
+  
